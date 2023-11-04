@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    float dc=35.00,lc=2.00,p,ub,uc,wb;
+    int psmt,prmt;
+    printf("enter the present meter reading");
+    scanf("%d",&psmt);
+    printf("enter the previous meter reading");
+    scanf("%d",&prmt);
+    printf("enter the unpaid balance");
+    scanf("%f",&ub);
+    p=psmt-prmt;
+    uc=p*1.10;
+    if(ub>0)
+    {
+    wb=dc+uc+ub+lc;
+    printf("water bill =%f",wb);
+    }
+    else if(ub==0)
+    {
+     wb=dc+uc;
+    printf("water bill =%f",wb);
+    }
+    else 
+    printf("please enter vaild data");
+    return 0;
+}
