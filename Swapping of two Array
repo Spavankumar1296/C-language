@@ -1,0 +1,40 @@
+#include<stdio.h>
+
+int main()
+{
+  int i,j,n;
+  printf("enter the size of array:");
+  scanf("%d",&n);
+  int a[n],b[n],temp;
+  printf("enter first array elements:\n");
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&a[i]);
+  }
+  printf("\nenter second array elements:\n");
+  for(i=0;i<n;i++)
+  {
+    scanf("%d",&b[i]);
+  }
+  printf("after swapping");
+  for(i=0;i<n;i++)
+  {
+    for(j=0;j<n;j++)
+    {
+      temp=b[i];
+      b[i]=a[i];
+      a[i]=temp;
+    }
+  }
+  printf("\nfirst array\n");
+  for(i=0;i<n;i++)
+  {
+    printf("%d\t",a[i]);
+  }
+  printf("\nsecond array\n");
+  for(i=0;i<n;i++)
+  {
+   printf("%d\t",b[i]);
+  }
+return 0;
+}
