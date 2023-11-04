@@ -1,0 +1,21 @@
+#include<stdio.h>
+int main()
+{
+    int a=0,b=1,c,d,n;
+    printf("number");
+    scanf("%d",&d);
+    if(d>0)
+    {
+    printf("%d\t%d\t",a,b);
+    for(n=3;n<=d;n++)
+      {
+        c=a+b;
+        printf("%d\t",c);
+        a=b;
+        b=c;
+      }
+    }
+    else
+    printf("invalid");
+    return 0;
+}
