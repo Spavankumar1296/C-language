@@ -1,0 +1,18 @@
+#include<stdio.h>
+
+int main()
+{
+   int a=18,age,b;
+printf("enter the age of voter");
+scanf("%d",&age);
+b=a-age;
+if(age>=a)
+printf("congratulations your are eligible to vote");
+else if((age<a)&&(age>=0))
+{
+printf("you need to wait %d year to vote",b);
+}
+else 
+printf("please enter valid data");
+return 0;
+}
